@@ -7,7 +7,7 @@ net_connect = ConnectHandler(
         password="admin1234",
 )
 try:
-        output = net_connect.send_command('show process cpu history')
+        output = net_connect.send_command('show fan')
         print(output)
 except NetMikoTimeoutException:
         print("SSH kapcsolodas nem siekrult")
